@@ -30,7 +30,7 @@ doc5 = Document(
 # Combine documents into a list
 docs = [doc1, doc2, doc3, doc4, doc5]
 
-# ✅ Use free HuggingFace embeddings instead of Gemini/OpenAI
+# ✅ Use free HuggingFace embeddings instead of Gemini/OpenAI (no API keys, no quota issues, no billing.)
 embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-L6-v2")
 
 # ✅ Create a Chroma vector store
