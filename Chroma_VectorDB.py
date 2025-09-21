@@ -36,8 +36,8 @@ embeddings = HuggingFaceEmbeddings(model_name="sentence-transformers/all-MiniLM-
 # ✅ Create a Chroma vector store
 vector_store = Chroma(
     embedding_function=embeddings,
-    persist_directory='my_chroma_db',
-    collection_name='sample'
+    persist_directory='my_chroma_db', # directory to store the database which get saved on current folder
+    collection_name='sample' #act as a table name
 )
 
 # Add documents
